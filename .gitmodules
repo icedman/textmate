@@ -1,0 +1,3 @@
+[submodule "libs/Onigmo"]
+	path = libs/Onigmo
+	url = https://github.com/k-takata/Onigmo
