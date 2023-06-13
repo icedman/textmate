@@ -136,6 +136,16 @@ rgba_t theme_color_from_scope_fg_bg(char *scope, bool fore) {
   return res;
 }
 
+rgba_t theme_color_from_scope(char *scope)
+{
+  return theme_color_from_scope_fg_bg(scope, true);
+}
+
+rgba_t theme_color_from_scope_bg(char *scope)
+{
+  return theme_color_from_scope_fg_bg(scope, false);
+}
+
 rgba_t theme_color(char *scope) { return theme_color_from_scope_fg_bg(scope); }
 
 theme_info_t themeInfo;

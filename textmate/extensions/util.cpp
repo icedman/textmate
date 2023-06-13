@@ -174,18 +174,18 @@ bool expand_path(char **path) {
   return true;
 }
 
-void initLog() {
 #ifdef ENABLE_LOG
+void initLog() {
   FILE *log_file = fopen(LOG_FILE, "w");
   if (log_file) {
     fclose(log_file);
   }
-#endif
   log_initialized = true;
 }
+#endif
 
-void log(const char *format, ...) {
 #ifdef ENABLE_LOG
+void log(const char *format, ...) {
   if (!log_initialized) {
     initLog();
   }
@@ -208,8 +208,8 @@ void log(const char *format, ...) {
     token = strtok(NULL, "\n");
   }
   fclose(log_file);
-#endif
 }
+#endif
 
 #define NK_INT8 int8_t
 #define NK_UINT8 uint8_t

@@ -172,5 +172,7 @@ struct Textmate {
 };
 
 rgba_t theme_color_from_scope_fg_bg(char *scope, bool fore = true);
+rgba_t theme_color_from_scope(char *scope);
+rgba_t theme_color_from_scope_bg(char *scope);
 
 #endif // TEXTMATE_H

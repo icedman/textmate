@@ -4,11 +4,11 @@
 #include <vector>
 
 #include <onigmognu.h>
-#include <textmate/extensions/extension.h>
-#include <textmate/parser/grammar.h>
-#include <textmate/parser/parse.h>
-#include <textmate/parser/private.h>
-#include <textmate/parser/reader.h>
+#include "extension.h"
+#include "grammar.h"
+#include "parse.h"
+#include "private.h"
+#include "reader.h"
 
 #ifndef DISABLE_ADD_GRAMMAR_THREADS
 #include <pthread.h>

@@ -5,7 +5,6 @@
 #include <iostream>
 
 static theme_t *current_parsed_theme = 0;
-static std::map<int, color_info_t> trueColors;
 
 static int termColorCount = 256;
 static color_t *termColors = (color_t *)termColors256;
